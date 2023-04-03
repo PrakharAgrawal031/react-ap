@@ -1,16 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Navbar, CTA, Brand } from './Components'
+
+import{Blog, Footer, Header, WhatGPT3, Possibility, Features} from './Containers'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div className="App">
-      <div className='bg-red-400'>
-        Rreatsdfga
+      <div className="gradient_bg">
+        <Navbar/>
+        <Header/>
       </div>
+      <Brand/>
+      <WhatGPT3/>
+      <Features/>
+      <Possibility/>
+      <CTA/>
+      <Blog/>
+      <Footer/>
     </div>
   )
 }
